@@ -76,3 +76,8 @@ Route::prefix('pemeriksaan-pasien')->group(function() {
 	Route::get('/', 'PemeriksaanPasienController@create')->name('pemeriksaan-pasien');
 	Route::post('/store', 'PemeriksaanPasienController@store')->name('pemeriksaan-pasien.store');
 });
+
+Route::prefix('riwayat-pemeriksaan-pasien')->group(function() {
+	Route::get('/', 'RiwayatPemeriksaanPasienController@index')->name('riwayat-pemeriksaan-pasien');
+	Route::get('/detail-obat', 'RiwayatPemeriksaanPasienController@detail_obat')->name('riwayat-pemeriksaan-pasien.detail-obat');
+});

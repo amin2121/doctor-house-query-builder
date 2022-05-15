@@ -28,7 +28,7 @@ class PemeriksaanPasienController extends Controller
 
         $id_pemeriksaan_pasien = DB::table('pemesanan')->insertGetId([
             'pasien_id' => request('pasien'),
-            'dokter_id' => request('dokter_id'),
+            'dokter_id' => request('dokter'),
             'user_id' => auth()->user()->id,
             'pasien' => $pasien->nama_pasien,
             'dokter' => $dokter->nama_dokter,

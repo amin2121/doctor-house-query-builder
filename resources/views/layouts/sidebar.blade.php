@@ -1,10 +1,10 @@
 <div class="main-sidebar sidebar-style-2">
   <aside id="sidebar-wrapper">
     <div class="sidebar-brand">
-      <a href="index.html">Stisla</a>
+      <a href="index.html">DOCTOR-HOUSE</a>
     </div>
     <div class="sidebar-brand sidebar-brand-sm">
-      <a href="index.html">St</a>
+      <a href="index.html">DH</a>
     </div>
     <ul class="sidebar-menu">
       <li class="menu-header">Menu Utama</li>
@@ -25,15 +25,15 @@
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Pesan Obat</span></a>
+        <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Pemeriksaan</span></a>
         <ul class="dropdown-menu">
-          <li class=""><a class="nav-link" href="{{ route('pemeriksaan-pasien') }}">Pemesanan Obat</a></li>
+          <li class=""><a class="nav-link" href="{{ route('pemeriksaan-pasien') }}">Pemeriksaan Pasien</a></li>
         </ul>
       </li>
       <li class="dropdown">
         <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Riwayat</span></a>
         <ul class="dropdown-menu">
-          <li class=""><a class="nav-link" href="{{ route('jenis_obat') }}">Riwayat Pemesanan</a></li>
+          <li class=""><a class="nav-link" href="{{ route('riwayat-pemeriksaan-pasien') }}">Pemeriksaan Pasien</a></li>
         </ul>
       </li>
     </ul>

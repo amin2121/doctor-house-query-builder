@@ -88,6 +88,12 @@
       const num = parseInt(value, 0)
       return isNaN(num) ? defaultValue : num
     }
+
+    function formatRupiah (money) {
+       return new Intl.NumberFormat('id-ID',
+         { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }
+       ).format(money);
+    }
   </script>
   @yield('script')
 </body>
